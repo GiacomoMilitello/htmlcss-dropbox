@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed black;
+}
+html{
+    font-family: sans-serif;
+}
+nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    align-items: center;
+}
+nav img{
+    height: 100%;
+}
+nav figure{
+    height: 25px;
+}
+#navleft,
+#navright{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+nav button {
+    background-color: transparent;
+    /* height: 100%; */
+    padding: 5px 10px;
+}
+nav button a{
+    text-decoration: none;
+    color: #686868;
+    font-weight: lighter;
+}
+.blueButton{
+    background-color: #0542f9;
+}
+.blueButton a{
+    color: white;
+}
