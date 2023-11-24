@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 html{
     font-family: sans-serif;
+}
+body{
+    padding-top: 40px;
 }
 nav{
     height: 40px;
@@ -13,7 +16,8 @@ nav{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    z-index: 2;
+    top: 0;
+    z-index: 1;
     background-color: white;
     align-items: center;
 }
@@ -29,13 +33,15 @@ nav figure{
     align-items: center;
     gap: 10px;
     height: 100%;
+    padding-inline: 10px;
 }
-nav button {
+button {
     background-color: transparent;
     /* height: 100%; */
     padding: 5px 10px;
+    border: none;
 }
-nav button a{
+button a{
     text-decoration: none;
     color: #686868;
     font-weight: lighter;
@@ -45,4 +51,41 @@ nav button a{
 }
 .blueButton a{
     color: white;
+}
+header{
+    background-color: #a6c5e1;
+}
+header > div{
+    width: 80%;
+    margin: 0 auto;
+}
+#under{
+    padding-top: 5%;
+}
+h1{
+    font-size: 60px;
+}
+#underH1{
+    display: flex;
+    margin-top: 5%;
+    position: relative;
+}
+#underH1 div > *{
+    margin-top: 8%;
+}
+#underH1 div{
+    max-width: 30%;
+}
+#underH1 svg{
+    font-size: 25px;
+    margin-block: 5%;
+}
+#underH1 > figure{
+    position: absolute;
+    max-width: 60%;
+    right: 0;
+    bottom: -20%;
+}
+#underH1 figure img{
+    max-width: 100%;
 }
