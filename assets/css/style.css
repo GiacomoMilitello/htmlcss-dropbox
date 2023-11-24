@@ -218,15 +218,14 @@ main{
 #teamMembers{
     display: flex;
     width: 100%;
-    /* sistemare widt a dx */
 }
 .logos{
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
+    width: 32%;
 }
 #centralLogo{
-    width: 30%;
+    width: 36%;
     overflow: auto;
 /* sistemare Overflow */
     padding: 2%;
@@ -312,4 +311,38 @@ main{
 }
 #questions li svg{
     margin: 5%;
+}
+/* Footer Links & Contacts */
+#linksContactsBlack{
+    background-color: black;
+    padding-block: 1%;
+}
+#linksContacts{
+    color: white;
+    width: 80%;
+    margin: 5% auto;
+    line-height: 160%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#linksContacts > div{
+    width: calc((100% / 5) - 15px);
+}
+#linksContacts > :last-child{
+    width: 100%;
+}
+#linksContacts hr{
+    width: 10%;
+    margin-block: 4%;
+}
+#linksContacts ul{
+    margin-top: 5%;
+}
+#linksContacts li{
+    list-style: none;
+}
+#linksContacts a{
+    text-decoration: none;
+    color: white;
 }
