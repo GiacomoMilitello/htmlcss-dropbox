@@ -183,3 +183,28 @@ main{
 .whiteButton{
     border: 1px solid gray;
 }
+/* Dropbox Business */
+#dropboxBusiness{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+.dropBusinessCard{
+    width: calc((100% / 3) - 10px);
+}
+.dropBusinessCard h3{
+    margin-block: 10px;
+}
+#dropboxBusiness h2{
+    width: 100%;
+}
+#dropboxBusiness figure{
+
+}
+#dropboxBusiness figure img{
+    width: 100%;
+}
+#dropboxBusiness > :last-child h2{
+    margin: 50px 0 30px 0;
+}
