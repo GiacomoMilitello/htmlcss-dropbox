@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 html{
     font-family: sans-serif;
@@ -84,26 +84,69 @@ h1{
     position: absolute;
     max-width: 60%;
     right: 0;
-    bottom: -20%;
+    bottom: -60px;
 }
 #underH1 figure img{
     max-width: 100%;
 }
 main{
     width: 80%;
-    margin: 5% auto;
+    margin: 90px auto;
 }
 #profileType{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-weight: lighter;
+    gap: 10px;
 }
 #profileType > :last-child{
     width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
 }
 #profileType h2{
     width: 100%;
 }
 #radio{
     width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-block: 15px;
+}
+.profileOptions{
+    border: 1px solid gray;
+    width: calc((100% / 3) - 10px);
+}
+.profileOptions > :first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    gap: 5px;
+    padding: 6px;
+}
+.profileOptions ul li{
+    list-style: none;
+    margin-block: 10px;
+}
+.infoOption{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 160%;
+}
+.infoOption hr{
+    width: 20%;
+}
+.infoOption h5{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contactSelling{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
