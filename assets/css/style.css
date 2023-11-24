@@ -208,3 +208,67 @@ main{
 #dropboxBusiness > :last-child h2{
     margin: 50px 0 30px 0;
 }
+#dropboxBusiness > :last-child p{
+    margin-bottom: 20%;
+}
+/* Team Members Logos */
+#teamMembers{
+    display: flex;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+#centralLogo{
+    width: 30%;
+    overflow: auto;
+/* sistemare Overflow */
+    padding: 2%;
+    background-color: #f2f2f2;
+}
+#centralLogo img{
+    width: 60%;
+}
+#centralLogo hr{
+    width: 30%;
+    margin-block: 8%;
+}
+#centralLogo > :last-child{
+    margin-top: 15%;
+}
+.logos figure{
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+.logos figure img{
+    width: 70%;
+}
+#designit{
+    background-color: #93cc89;
+    border: 10px solid #c7e5c1;
+}
+#asu{
+    background-color: #4e0020;
+}
+#uf{
+    background-color: #1b7cbd;
+}
+#topps{
+    background-color: #ef0016;
+}
+#wbr{
+    background-color: #c80018;
+}
+#hearst{
+    background-color: #a6c5e1;
+}
+#lonelyPlanet{
+    background-color: #0c156e;
+}
+#clearChannel{
+    background-color: #fdd225;
+}
