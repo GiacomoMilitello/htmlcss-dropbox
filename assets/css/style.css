@@ -1,3 +1,5 @@
+/* FIX FREETRIAL WHITE BUTTON HOVER */
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +13,34 @@ html{
 body{
     padding-top: 40px;
 }
+button {
+    background-color: transparent;
+    /* height: 100%; */
+    padding: 10px 15px;
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: #686868;
+    font-weight: lighter;
+}
+.blueButton{
+    background-color: rgb(5, 66, 249);
+}
+.blueButton:hover{
+    background-color: rgba(5, 66, 249, 0.8);
+}
+.blueButton a{
+    color: white;
+}
+.whiteButton{
+    border: 1px solid gray;
+    background-color: white;
+}
+.whiteButton:hover{
+    opacity: 0.6;
+}
+
 /* nav */
 nav{
     height: 40px;
@@ -37,23 +67,10 @@ nav figure{
     height: 100%;
     padding-inline: 10px;
 }
-button {
-    background-color: transparent;
-    /* height: 100%; */
-    padding: 10px 15px;
-    border: none;
+nav button{
+    padding: 5px 12px;
 }
-button a{
-    text-decoration: none;
-    color: #686868;
-    font-weight: lighter;
-}
-.blueButton{
-    background-color: #0542f9;
-}
-.blueButton a{
-    color: white;
-}
+
 /* jumbo */
 header{
     background-color: #a6c5e1;
@@ -85,18 +102,20 @@ h1{
 }
 #underH1 > figure{
     position: absolute;
-    max-width: 60%;
+    max-width: 65%;
     right: 0;
     bottom: -60px;
 }
 #underH1 figure img{
     max-width: 100%;
 }
+
 /* main */
 main{
     width: 65%;
     margin: 90px auto;
 }
+
 /* Profile Cards */
 #profileType{
     display: flex;
@@ -163,6 +182,7 @@ main{
 .contactSelling > :first-child > :first-child{
     margin-bottom: 40px;
 }
+
 /* Partner Finder */
 #partnerFinder{
     line-height: 160%;
@@ -181,10 +201,7 @@ main{
 #partnerFinder > :nth-child(2){
     padding-left: 5%;
 }
-.whiteButton{
-    border: 1px solid gray;
-    background-color: white;
-}
+
 /* Dropbox Business */
 #dropboxBusiness{
     display: flex;
@@ -214,6 +231,7 @@ main{
 #dropboxBusiness > :last-child p{
     margin-bottom: 20%;
 }
+
 /* Team Members Logos */
 #teamMembers{
     display: flex;
@@ -277,6 +295,7 @@ main{
 #clearChannel{
     background-color: #fdd225;
 }
+
 /* Free Trial */
 #freeTrial{
     background-color: #a6c5e1;
@@ -292,6 +311,7 @@ main{
     color: #550001;
     line-height: 160%;
 }
+
 /* Frequently Asked Questions */
 #questions{
     width: 65%;
@@ -301,9 +321,11 @@ main{
     margin-top: 5%;
 }
 #questions li{
-    border-bottom: 1px solid gray;
     list-style: none;
-    line-height: 500%;
+    border-bottom: 1px solid gray;
+}
+#questions li div{
+    /* line-height: 500%; */
     /* margin-block: 10px; */
     display: flex;
     align-items: center;
@@ -312,6 +334,14 @@ main{
 #questions li svg{
     margin: 5%;
 }
+#questions li>:nth-child(2){
+    display: none;
+    margin-block: 40px;
+}
+#questions li:hover :nth-child(2){
+    display: block;
+}
+
 /* Footer Links & Contacts */
 #linksContactsBlack{
     background-color: black;
