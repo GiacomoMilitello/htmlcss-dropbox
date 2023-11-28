@@ -123,8 +123,9 @@ main{
     gap: 10px;
 }
 input[type="radio"]:checked{
-    border-color:  blue;
-    background-color: white;
+    accent-color: #0443fe;
+    /* border-color:  blue;
+    background-color: white; */
 }
 #profileType > :last-child{
     width: 100%;
@@ -221,9 +222,9 @@ input[type="radio"]:checked{
 #dropboxBusiness h2{
     width: 100%;
 }
-#dropboxBusiness figure{
+/* #dropboxBusiness figure{
 
-}
+} */
 #dropboxBusiness figure img{
     width: 100%;
 }
@@ -353,7 +354,7 @@ input[type="radio"]:checked{
     padding-block: 1%;
 }
 #linksContacts{
-    color: white;
+    color: #c9c9c9;
     width: 80%;
     margin: 5% auto;
     line-height: 160%;
@@ -370,6 +371,7 @@ input[type="radio"]:checked{
 #linksContacts hr{
     width: 10%;
     margin-block: 4%;
+    border-color: #c9c9c9;
 }
 #linksContacts ul{
     margin-top: 5%;
@@ -379,5 +381,5 @@ input[type="radio"]:checked{
 }
 #linksContacts a{
     text-decoration: none;
-    color: white;
+    color: #c9c9c9;
 }
