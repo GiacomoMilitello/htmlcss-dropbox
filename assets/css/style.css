@@ -55,7 +55,7 @@ nav img{
     height: 100%;
 }
 nav figure{
-    height: 25px;
+    height: 18px;
 }
 #navleft,
 #navright{
@@ -121,6 +121,10 @@ main{
     justify-content: space-between;
     font-weight: lighter;
     gap: 10px;
+}
+input[type="radio"]:checked{
+    border-color:  blue;
+    background-color: white;
 }
 #profileType > :last-child{
     width: 100%;
