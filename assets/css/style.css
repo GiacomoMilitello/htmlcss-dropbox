@@ -1,5 +1,3 @@
-/* FIX FREETRIAL WHITE BUTTON HOVER */
-
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +35,7 @@ button a{
     border: 1px solid gray;
     background-color: white;
 }
-.whiteButton:hover{
+.whiteButton:hover a{
     opacity: 0.6;
 }
 
@@ -240,15 +238,16 @@ main{
 .logos{
     display: flex;
     flex-wrap: wrap;
-    width: 32%;
+    aspect-ratio: 1/1;
+    width: calc(100% / 3);
 }
 #centralLogo{
-    width: 36%;
     overflow: auto;
-/* sistemare Overflow */
     padding: 2%;
     background-color: #f2f2f2;
     line-height: 160%;
+    width: calc(100% / 3);
+    aspect-ratio: 1;
 }
 #centralLogo img{
     width: 60%;
@@ -256,6 +255,7 @@ main{
 #centralLogo hr{
     width: 30%;
     margin-block: 8%;
+    opacity: 0.5;
 }
 #centralLogo > :last-child{
     margin-top: 15%;
@@ -269,6 +269,7 @@ main{
 }
 .logos figure img{
     width: 70%;
+    filter: invert(1);
 }
 #designit{
     background-color: #93cc89;
