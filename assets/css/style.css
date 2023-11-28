@@ -68,6 +68,10 @@ nav figure{
 nav button{
     padding: 5px 12px;
 }
+nav button a:hover{
+    padding-bottom: 11px;
+    border-bottom: 2.5px solid gray;
+}
 
 /* jumbo */
 header{
