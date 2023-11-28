@@ -38,6 +38,12 @@ button a{
 .whiteButton:hover a{
     opacity: 0.6;
 }
+.graySvg{
+    fill: #868383;
+}
+.blueSvg{
+    fill: #0441fe;
+}
 
 /* nav */
 nav{
@@ -350,6 +356,15 @@ input[type="radio"]:checked{
 }
 #questions li:hover :nth-child(2){
     display: block;
+}
+#questions li>:first-child>:nth-child(2){
+    display: none;
+}
+#questions li:hover >:first-child>:nth-child(2){
+    display: block;
+}
+#questions li:hover >:first-child>:first-child{
+    display: none;
 }
 
 /* Footer Links & Contacts */
